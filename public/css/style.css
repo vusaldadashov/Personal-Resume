@@ -2,6 +2,11 @@ body {
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
+#successtext{
+    opacity: 0;
+    visibility: hidden;
+    transition: all 2s;
+}
 #nav {
     z-index: 99;
     background-color: rgb(49, 51, 59, 0.7);
@@ -114,6 +119,12 @@ body {
 .col-md-4{
     width: 25% !important;
 }
+.mailform {
+    width: 25% !important;
+}
+.mailform form {
+    width: 75% !important;
+}
 @media (max-width: 767px) {
     .col-md-4{
         width: 50% !important;
@@ -158,5 +169,8 @@ body {
     .project_hover_content p{
         font-size: 4vw;
         width: 80%;
+    }
+    .mailform{
+        width: 75% !important;
     }
 }

@@ -10,6 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="./script.js"></script>
+    <script src="./emailservice.js"></script>
 </head>
 
 <body class="specail_background_color">
@@ -461,7 +462,7 @@
         </div>
     </section>
 
-    <section class="d-flex flex-column" style="background-color: #3d3e42;" id="contact">
+    <section class="d-flex flex-column pb-5" style="background-color: #3d3e42;" id="contact">
         <header class="d-flex w-100 position-relative">
             <hr class="w-100 text-warning opacity-100 border-2">
             <h2 class="position-absolute top-50 start-50 translate-middle m-0 p-2 fw-bold pt-0"
@@ -493,6 +494,29 @@
                 </svg>
                 <span class="text-warning">Lodz, Poland</span>
             </div>
+        </div>
+        <!-- EMail sender-->
+        
+        <div class=" pt-4 pb-4 d-flex flex-column  align-items-center   align-self-center rounded mailform" style="background-color: #31333b;">
+            <h4 class="text-white">Contact</h4>
+            <div class="text-success bg-white p-1 fw-bold" id="successtext" >Your email is sended successfully!</div>
+            <form onsubmit="sendMyMail(event)" class=" d-flex flex-column mailform" >
+                <div class="form-group">
+                  <label for="name" class="text-warning">Name:</label>
+                  <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+            
+                <div class="form-group">
+                  <label for="email" class="text-warning">Email:</label>
+                  <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+            
+                <div class="form-group">
+                  <label for="message" class="text-warning">Message:</label>
+                  <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-warning mt-2 align-self-center">Send</button>
+              </form>
         </div>
     </section>
     <footer>
@@ -545,6 +569,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+        emailjs.init('CiAp-DYAtUu6pOfXT')
+    </script>
 </body>
 
 </html>
