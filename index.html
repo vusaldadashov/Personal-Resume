@@ -18,7 +18,8 @@
             height="19" fill="currentColor" class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
             <path
                 d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z" />
-        </svg></button>
+        </svg>
+    </button>
 
     <header class="shadow mb-5 header_poster" id="top">
         <nav class="w-100 d-flex justify-content-center position-fixed pt-3 pb-3" id="nav">
@@ -496,27 +497,28 @@
             </div>
         </div>
         <!-- EMail sender-->
-        
-        <div class=" pt-4 pb-4 d-flex flex-column  align-items-center   align-self-center rounded mailform" style="background-color: #31333b;">
+
+        <div class=" pt-4 pb-4 d-flex flex-column  align-items-center   align-self-center rounded mailform"
+            style="background-color: #31333b;">
             <h4 class="text-white">Contact</h4>
-            <div class="text-success bg-white p-1 fw-bold" id="successtext" >Your email is sended successfully!</div>
-            <form onsubmit="sendMyMail(event)" class=" d-flex flex-column mailform" >
+            <div class="text-success bg-white p-1 fw-bold" id="successtext">Your email is sended successfully!</div>
+            <form onsubmit="sendMyMail(event)" class=" d-flex flex-column mailform">
                 <div class="form-group">
-                  <label for="name" class="text-warning">Name:</label>
-                  <input type="text" class="form-control" id="name" name="name" required>
+                    <label for="name" class="text-warning">Name:</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
                 </div>
-            
+
                 <div class="form-group">
-                  <label for="email" class="text-warning">Email:</label>
-                  <input type="email" class="form-control" id="email" name="email" required>
+                    <label for="email" class="text-warning">Email:</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
                 </div>
-            
+
                 <div class="form-group">
-                  <label for="message" class="text-warning">Message:</label>
-                  <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                    <label for="message" class="text-warning">Message:</label>
+                    <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
                 </div>
                 <button type="submit" class="btn btn-warning mt-2 align-self-center">Send</button>
-              </form>
+            </form>
         </div>
     </section>
     <footer>
@@ -571,7 +573,6 @@
         crossorigin="anonymous"></script>
 
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-
     <script type="text/javascript">
         emailjs.init('CiAp-DYAtUu6pOfXT')
     </script>

@@ -1,16 +1,13 @@
 // Get the button
-let mybutton = document.getElementById("myBtn");
-let mynav = document.getElementById("nav")
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function () { scrollFunction() };
 
-function scrollFunction() {
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = () => {
+    let mybutton = document.getElementById("myBtn");
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         mybutton.style.display = "block";
-        nav.style.backgroundColor = "rgb(49, 51, 59, 0.7)"
-    } else {
+    }
+    else {
         mybutton.style.display = "none";
-        nav.style.backgroundColor = "none"
     }
 }
 
